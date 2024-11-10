@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exclusive Video Offer</title>
+    <style>
+        /* Basic styling reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Page styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+            color: #333;
+            padding: 1em;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 2em;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            font-size: 2em;
+            color: #007bff;
+            margin-bottom: 1em;
+        }
+
+        .video-container {
+            margin: 1em 0;
+        }
+
+        video {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            margin-top: 1.5em;
+        }
+
+        .button {
+            padding: 0.75em 1.5em;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="header">Exclusive Video Offer Just for You!</h1>
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <video controls>
+                <source src="your-video-file.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <p>Watch the video to discover this exclusive offer. Don't miss out!</p>
+
+        <!-- Button Group -->
+        <div class="button-group">
+            <!-- Refresh button to reload the page -->
+            <button class="button" onclick="location.reload();">Refresh</button>
+            
+            <!-- Back button to go to the previous page -->
+            <button class="button" onclick="history.back();">Back</button>
+        </div>
+    </div>
+
+</body>
+</html>
